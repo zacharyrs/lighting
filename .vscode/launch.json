@@ -1,0 +1,18 @@
+{
+  "configurations": [
+    {
+      "cwd": "${workspaceRoot}",
+      "executable": "./lighting.elf",
+      "name": "Debug (BMP)",
+      "request": "launch",
+      "type": "cortex-debug",
+      "preLaunchTask": "make lighting.elf",
+      "device": "STM32F103C8",
+      "servertype": "bmp",
+      "svdFile": "${workspaceRoot}/.vscode/STM32F103.svd",
+      "demangle": true,
+      "armToolchainPath": "/home/zach/hax",
+      "BMPGDBSerialPort": "COM3"
+    }
+  ]
+}
